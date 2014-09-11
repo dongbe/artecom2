@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <body>
+        <ui:composition>
+            <div id="page-header">
+                <div id="page-header-banner">
+                    <div id="page-header-banner-logo">
+                        <img src="resources/img/france2.png" height="100px" />
+                    </div>
+                    <div id="page-header-banner-text">
+                        <span><a href="#">Artecom</a></span>
+                    </div>
+                </div>
+
+                <div id="page-header-user">
+                    <div id="page-header-user-info">
+                        <span><a href="#">Log in</a></span>
+                        <span>-</span>
+                        <span><a href="#">Sign in</a></span>
+                    </div>
+                    <div id="page-header-user-cart">
+                        <span id="cart-icon"><img id="cart-icon-file" src="resources/img/icon/glyphicons_202_shopping_cart.png" /></span>
+                        <span id="cart-item-count">(8)</span>
+                    </div>
+                </div>
+            </div>
+            <div id="page-menu">
+                <span class="page-menu-item"><a href="products.jsf">
+                        <img class="page-menu-icon" id="page-menu-icon-shop" src="resources/img/icon/glyphicons_350_shopping_bag.png" /><span>Shop</span></a></span>
+                <span class="page-menu-item page-menu-item-selected">
+                    <a href="#"><img class="page-menu-icon" id="page-menu-icon-map" src="resources/img/icon/glyphicons_370_globe_af.png" /><span>Map</span></a></span>
+                <!--<span class="page-menu-item"><a href="#"><img class="page-menu-icon" id="page-menu-icon-about" src="resource/img/icons/glyphicons_195_circle_info.png" /><span>About</span></a></span>-->
+                <span class="page-menu-item" id="page-menu-item-blank"></span>
+                <span class="page-menu-item" id="page-menu-item-search">
+                    <input type="text" placeholder="Search..." />
+                </span>
+            </div>
+            <ul>
+                <li><h:link value="Home" outcome="index" /> </li>
+                <li><h:link value="Craft" outcome="craft" /></li> 
+                <li><h:link value="Compte" outcome="compte" /></li> 
+                <li><h:link value="produits" outcome="products" /></li> 
+            </ul>
+        </ui:composition>
+    </body>
+</html>
